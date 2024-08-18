@@ -41,7 +41,7 @@ B4    B5    B6       DOWN   -      -
 | Black Widow | input mapping (1p only) |
 | Crazy Climber | input mapping (1p only) |
 | Crazy Climber 2 | input mapping (1p only) |
-| Inferno | input mapping (1p only) + OSD option "Aim+fire: On" |
+| Inferno | input mapping (1p only) + [OSD option] "Aim+fire: On" |
 | Lost Tomb | [OSD option] Fire Mode: Second Joystick |
 | Mars | [OSD option] Fire Mode: Second Joystick |
 | Minefield | [OSD option] Fire Mode: Second Joystick |
