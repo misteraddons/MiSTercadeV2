@@ -3,7 +3,13 @@
 
 ## Installation
 * Download a [MiSTer.ini file](https://github.com/misteraddons/mister_ini/tree/main/MiSTercade%20V2) that matches your cabinet's resolution and orientation, and place it in the main folder of your MiSTer SD card.
-* Modify or create the "downloader.ini" file on your MiSTer SD card, to include the mapping repository entry linked below. This will ensure the correct mappings for all arcade games are downloaded and updated automatically!
+* Modify or create the "downloader.ini" file on your MiSTer SD card, by including this section of code. This will ensure the correct mappings for all arcade games are downloaded and updated automatically!
+```
+[misteraddons/mistercade_v2_mappings]
+db_url = https://raw.githubusercontent.com/misteraddons/mistercade_v2_mappings/db/db.json.zip
+allow_delete = 0
+verbose = true
+```
 * Toggle SW3 on DE10-nano (the switch nearest the HDMI port) towards the center of the board. SW0, SW1, and SW2 should remain off (towards edge of board).
 * Plug MiSTercade PCB into top of DE10-nano, mating all pin headers
 * Install USB bridge to both the DE10-nano and MiSTercade PCB
