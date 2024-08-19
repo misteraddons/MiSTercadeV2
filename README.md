@@ -2,9 +2,7 @@
  MiSTer FPGA JAMMA adapter
 
 ## Installation
-* Choose a MiSTer.ini (15 kHz or 31 kHz) and rename it to MiSTer.ini
-* Download the files from Github (https://github.com/misteraddons/mister_ini/tree/main/MiSTercade%20V2)
-* Unzip one of the button mappings from /config/inputs folder - Note only difference in menu button combination (down + start vs B1 + B6)
+* Download a MiSTer.ini file (15 kHz or 31 kHz) from Github (https://github.com/misteraddons/mister_ini/tree/main/MiSTercade%20V2)
 * Copy input mapping files to Micro SD card
 * Copy these files to your MiSTer's micro SD card, overwriting existing files
 * Toggle SW0 on DE10-nano (one of the 4 large switches near the GPIO header) towards the center of the board. SW1-3 should remain off (towards edge of board)
