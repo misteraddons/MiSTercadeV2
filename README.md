@@ -38,19 +38,19 @@ B4    B5    B6       DOWN   -      -
 
 | Game | Twin Stick Mode |
 | --- | --- |
-| Black Widow | input mapping (1p only) |
-| Crazy Climber | input mapping (1p only) |
-| Crazy Climber 2 | input mapping (1p only) |
-| Inferno | input mapping (1p only) + [OSD option] "Aim+fire: On" |
+| Black Widow | input mapping (1P only) |
+| Crazy Climber | input mapping (1P only) |
+| Crazy Climber 2 | input mapping (1P only) |
+| Inferno | input mapping (1P only) + [OSD option] "Aim+fire: On" |
 | Lost Tomb | [OSD option] Fire Mode: Second Joystick |
 | Mars | [OSD option] Fire Mode: Second Joystick |
 | Minefield | [OSD option] Fire Mode: Second Joystick |
 | Rescue | [OSD option] Fire Mode: Second Joystick |
 | Robotron 2084 | [OSD option] Fire Mode: Second Joystick |
-| Smash TV | input mapping (1p only) |
-| Star Guards | input mapping (1p only) |
-| Total Carnage | input mapping (1p only) |
-| Water Match | input mapping (1p only) |
+| Smash TV | input mapping (1P only) |
+| Star Guards | input mapping (1P only) |
+| Total Carnage | input mapping (1P only) |
+| Water Match | input mapping (1P only) |
 
 ### Customizing Input Firmware
 * Hold Start button on the Player # you want to customize (i.e. P1 Start) while applying power to the MiSTercade. (You can apply 5V DC C+ wall power to the DE10-nano if you want to do this outside of the cabinet)
