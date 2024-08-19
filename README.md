@@ -2,7 +2,7 @@
  MiSTer FPGA JAMMA adapter
 
 ## Installation
-* Download a MiSTer.ini file (15 kHz or 31 kHz) from Github (https://github.com/misteraddons/mister_ini/tree/main/MiSTercade%20V2) and place it in the main folder of your MiSTer SD card.
+* Download a [MiSTer.ini file](https://github.com/misteraddons/mister_ini/tree/main/MiSTercade%20V2) that matches your cabinet's resolution and orientation, and place it in the main folder of your MiSTer SD card.
 * Modify or create the "downloader.ini" file on your MiSTer SD card, to include the mapping repository entry linked below. This will ensure the correct mappings for all arcade games are downloaded and updated automatically!
 * Toggle SW3 on DE10-nano (the switch nearest the HDMI port) towards the center of the board. SW0, SW1, and SW2 should remain off (towards edge of board).
 * Plug MiSTercade PCB into top of DE10-nano, mating all pin headers
