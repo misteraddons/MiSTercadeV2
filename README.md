@@ -2,12 +2,12 @@
  MiSTer FPGA JAMMA adapter
 
 ## Installation
-* Download a MiSTer.ini file (15 kHz or 31 kHz) from Github (https://github.com/misteraddons/mister_ini/tree/main/MiSTercade%20V2)
-* Copy input mapping files to Micro SD card
-* Copy these files to your MiSTer's micro SD card, overwriting existing files
-* Toggle SW0 on DE10-nano (one of the 4 large switches near the GPIO header) towards the center of the board. SW1-3 should remain off (towards edge of board)
+* Download a MiSTer.ini file (15 kHz or 31 kHz) from Github (https://github.com/misteraddons/mister_ini/tree/main/MiSTercade%20V2) and place it in the main folder of your MiSTer SD card.
+* Modify or create the "downloader.ini" file on your MiSTer SD card, to include the mapping repository entry linked below. This will ensure the correct mappings for all arcade games are downloaded and updated automatically!
+* Toggle SW3 on DE10-nano (the switch nearest the HDMI port) towards the center of the board. SW0, SW1, and SW2 should remain off (towards edge of board).
 * Plug MiSTercade PCB into top of DE10-nano, mating all pin headers
 * Install USB bridge to both the DE10-nano and MiSTercade PCB
+* Install HDMI bridge to both the DE10-nano and MiSTercade PCB
 * Plug JAMMA Connector onto MiSTercade edge, ensuring correct orientation and pin alignment (ensure GND, and Voltage pins are correct)
 
 ## Controls
@@ -19,20 +19,12 @@ Coin = Select
 Start = Start
 Menu/OSD = Down + Start OR B1 + B6 (depending on which zip file you extract)
 ```
-* NOTE: If you choose B1 + B6 menu button combo, you will not be able to activate autofire on B1 or B6
-* NOTE: If you choose Down + Start menu button combo, you will not be able to use freeplay 
-* 6 button mapping not currently supported by default so 6 button games will have their own per-game input mappings
 * Smash TV and Total Carnage sometimes activate autofire instead of OSD
-* Feel free to remap as needed
+* Feel free to remap as needed, but the mapping updater may overwrite your changes. After the initial mapping downloader, remove the MiSTercade_V2 entry from downloader.ini to disable future updates.
 
 ### Twin Stick Games
-* There are several twin stick games on MiSTer. There are 2 general configuration styles: mapping and OSD setting. The included map files are set for twin stick play, and the cfg files enable twin stick on their corresponding games.
+* There are several twin stick games on MiSTer. There are 2 general configuration styles: input mapping and OSD option. The included map files are set for twin stick play, and the cfg files enable twin stick on their corresponding games.
 * Tank sticks aren't easily supported as they require twin sticks with triggers
-* Twin stick games are mapped for both button and second stick shooting direction as follows:
-```
-B1    B2    B3       UP    LEFT  RIGHT
-B4    B5    B6       DOWN   -      - 
-```
 
 | Game | Twin Stick Mode |
 | --- | --- |
@@ -50,11 +42,11 @@ B4    B5    B6       DOWN   -      -
 | Total Carnage | input mapping (1P only) |
 | Water Match | input mapping (1P only) |
 
-### Customizing Input Firmware
+### Customizing Input Firmware using the GP2040-CE Web Configurator
 * Hold Start button on the Player # you want to customize (i.e. P1 Start) while applying power to the MiSTercade. (You can apply 5V DC C+ wall power to the DE10-nano if you want to do this outside of the cabinet)
 * Remove USB bridge and connect Micro USB cable to the MiSTercade PCB's micro USB port. Connect the other end to a conputer.
 * Open a web browser to "192.168.7.1"
-* Modify settings and save
+* Modify [GP2040-CE Web Configurator settings](https://gp2040-ce.info/web-configurator/) and save
 * Power off the MiSTercade
 * Restore USB bridge, or repeat for other player
 
@@ -77,13 +69,11 @@ Volume can be adjusted using the protruding potentiometer, or in the menu as fol
 * Adjust core volume or main volume
 * (Core volume settings are saved to the SD card for future use)
 
-* Alternatively, use the Audio Normalization Scripts https://github.com/misteraddons/normalize_audio_scripts
-
 ## Video
 RGB Video levels are ~3V
 
 ## SNAC
-Built-in SNAC is intended for light guns, but works with controllers as well. The usual caveats with SNAC apply - can't control OSD menu, 1 player, no native arcade controls, etc.
+Built-in SNAC is intended for light guns, but works with controllers as well. The usual caveats with SNAC apply - can't control OSD menu, 1 player for Sega cores, no native arcade controls, etc.
 
 ## Built-in Switches
 | DIP Switch | Left Position | Right Position |
