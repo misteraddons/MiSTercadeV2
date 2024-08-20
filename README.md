@@ -7,8 +7,6 @@
 ```
 [misteraddons/mistercade_v2_mappings]
 db_url = https://raw.githubusercontent.com/misteraddons/mistercade_v2_mappings/db/db.json.zip
-allow_delete = 0
-verbose = true
 ```
 * Toggle SW3 on DE10-nano (the switch nearest the HDMI port) towards the center of the board. SW0, SW1, and SW2 should remain off (towards edge of board).
 * Plug MiSTercade PCB into top of DE10-nano, mating all pin headers
